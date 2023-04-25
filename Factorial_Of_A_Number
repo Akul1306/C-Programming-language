@@ -1,0 +1,19 @@
+# include <stdio.h>
+int factorial(int f)
+{
+    if (f == 1 || f == 0)
+    {
+        return 1;
+    }
+    else{
+    return f*factorial(f-1);
+    }
+}
+
+void main()
+{
+   int f;
+    printf("Enter the number for factorial: ");
+    scanf("%d",&f);
+    printf("Factorial is: %d",factorial(f));
+}
